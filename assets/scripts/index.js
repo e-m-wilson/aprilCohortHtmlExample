@@ -219,6 +219,10 @@ let searchBtn = document.querySelector('#pokemonSearchBtn');
 searchBtn.addEventListener('click', fetchResults);
 let searchResults = document.querySelector('#searchResults');
 
+
+
+
+
 async function fetchResults() {
     let query = document.querySelector('#pokemonSearch').value;
 
