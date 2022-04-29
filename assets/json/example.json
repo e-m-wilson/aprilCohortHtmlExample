@@ -1,0 +1,7 @@
+{
+    "value": "this is from my json!",
+    "value2": "this is value 2",
+    "objs": {
+        "someOtherValue": "from someOtherValue"
+    }
+}

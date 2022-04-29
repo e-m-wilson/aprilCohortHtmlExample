@@ -1,19 +1,72 @@
 <!-- 
     Author: Ethan Wilson
     last updated: 4/26/22
-    description: this is my first html page
+    description: this is my homepage
 -->
 
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>My first HTML Page!</title>
-        <meta name="description" content="My first website!">
+        <title>Welcome to Ethan's Portfolio!</title>
+        <meta name="description" content="Welcome to the portfolio of Ethan Wilson!">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
+        <script type="module" src="assets/scripts/index.js" defer></script>
     </head>
     <body>
-        <a href="https://www.google.com">Click this to go to google!</a>
+        <div id="splash">
+            <h1>Hi, I'm Ethan a Salesforce Dev!</h1>
+            <a id="splashButton" href="#aboutMeHeader">Let's get to work!</a>
+        </div>
+        <header>
+            <img class="logoImg" src="assets/img/logo.png" alt="Revature Logo">
+            <nav>
+                <a class="navItem" href="index.html">Home</a>
+                <a class="navItem" href="certifications.html">Certifications</a>
+            </nav>
+        </header>
+        
+        <div id="container">
+            <label for="pokemonSearch">Enter Pokemon Name: </label>
+            <input id="pokemonSearch" type="text">
+            <button id="pokemonSearchBtn">Submit</button>
+            <div id="searchResults"></div>
+
+
+            <h2 id="aboutMeHeader">About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi optio sunt minus aperiam animi, sapiente necessitatibus molestiae dolorum nesciunt perspiciatis reiciendis accusamus aut enim, ipsum corporis velit deserunt. Deleniti, rerum.</p>
+            <h2>Skills</h2>
+            <ul>
+                <li>Apex</li>
+                <li>SOQL</li>
+                <li>LWC</li>
+            </ul>
+            <ol>
+                <li>SOSL</li>
+                <li>Visualforce</li>
+                <li>Package based development</li>
+            </ol>
+            <h2>Biggest clients</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Revenue</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Infosys</td>
+                        <td>$4.5b</td>
+                    </tr>
+                    <tr>
+                        <td>WiPro</td>
+                        <td>$4.5b</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </body>
 </html>
